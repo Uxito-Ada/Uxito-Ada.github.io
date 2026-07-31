@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Heyang Sun Homepage
 
 This is a dependency-free static site for GitHub Pages. All content is in `index.html`, styling is in `styles.css`, and `assets/heyang-sun-cv.pdf` is the downloadable CV.
@@ -33,3 +34,6 @@ git add .
 git commit -m "Update homepage"
 git push
 ```
+=======
+# Uxito-Ada.github.io
+>>>>>>> 4335e3317a7c70c0bafcd48809058492ecac5d0c
