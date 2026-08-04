@@ -59,7 +59,8 @@ a:hover { filter: brightness(1.12); }
 .profile-card { width: 100%; padding: 0 25px 36px; }
 .avatar { display: block; width: 184px; height: 184px; margin: 0 auto 24px; border-radius: 50%; object-fit: cover; box-shadow: 0 6px 24px var(--luka-shadow); }
 .profile-card h1 { margin: 0 0 7px; color: var(--luka-text); font-family: Georgia, "Times New Roman", serif; font-size: 29px; font-weight: 500; line-height: 1.2; }
-.profile-title { margin: 0 0 14px; color: var(--luka-secondary); font-size: 14px; line-height: 1.55; }
+.profile-title { max-width: 270px; margin: 0 auto 14px; color: var(--luka-secondary); font-size: 12px; line-height: 1.65; }
+.profile-title span { margin: 0 4px; color: var(--luka-accent); }
 .email { display: block; margin-bottom: 23px; color: var(--luka-secondary); font-family: "SFMono-Regular", Consolas, monospace; font-size: 12px; overflow-wrap: anywhere; }
 .research-keywords { margin: 0 0 20px; color: var(--luka-accent); font-size: 13px; font-weight: 600; line-height: 1.55; }
 .profile-links { display: flex; justify-content: center; gap: 10px; }
@@ -78,6 +79,7 @@ a:hover { filter: brightness(1.12); }
 .timeline-item:last-child::before { bottom: 50%; }
 .timeline-item::after { content: ""; position: absolute; top: 7px; left: -25px; width: 10px; height: 10px; border: 2px solid var(--luka-bg); border-radius: 50%; background: var(--luka-accent); }
 .item-content h3 { margin: 0 0 2px; color: var(--luka-text); font-size: 15px; font-weight: 700; line-height: 1.45; }
+.affiliation { margin: 0 0 2px !important; color: var(--luka-accent); font-size: 13px; font-weight: 600; }
 .detail { margin: 0 0 3px !important; color: var(--luka-secondary); font-size: 14px; }
 .period { margin: 5px 0 0 !important; color: var(--luka-accent); font-size: 13px; font-weight: 500; }
 .project-list { margin: 8px 0 5px; padding-left: 18px; color: var(--luka-secondary); font-size: 14px; }
@@ -94,15 +96,15 @@ a:hover { filter: brightness(1.12); }
 .project-list a:hover { border-bottom-width: 2px; color: var(--luka-accent); filter: none; }
 
 .publications ol { margin: 0; padding: 0; list-style: none; counter-reset: publication; }
-.publications li { position: relative; margin: 0 0 12px; padding: 12px 0 12px 18px; border-left: 3px solid var(--luka-accent); counter-increment: publication; }
-.publications li::before { content: counter(publication, decimal-leading-zero); position: absolute; top: 13px; left: -43px; color: var(--luka-secondary); font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; }
+.publications li { position: relative; margin: 0 0 7px; padding: 9px 0 9px 18px; border-left: 3px solid var(--luka-accent); counter-increment: publication; }
+.publications li::before { content: counter(publication, decimal-leading-zero); position: absolute; top: 10px; left: -43px; color: var(--luka-secondary); font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; }
 .publications li a { display: block; margin-bottom: 3px; color: var(--luka-text); font-size: 15px; font-weight: 600; }
 .publication-note { display: block; color: var(--luka-secondary); font-size: 13px; }
-.publication-links { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 9px; }
+.publication-links { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 6px; }
 .publication-links a {
   display: inline-flex;
   align-items: center;
-  min-height: 25px;
+  min-height: 23px;
   margin: 0;
   padding: 3px 9px;
   border: 1px solid var(--luka-border);
@@ -116,6 +118,9 @@ a:hover { filter: brightness(1.12); }
 .publication-links a:hover { border-color: var(--luka-accent); background: rgba(186, 107, 77, 0.06); filter: none; }
 
 .compact-timeline .timeline-item { padding-bottom: 18px; }
+#service .item-content h3,
+#service .period { color: var(--luka-accent); }
+#service .detail { color: var(--luka-secondary); }
 .awards { max-width: 680px; }
 .award-item { display: flex; align-items: flex-start; gap: 13px; padding: 5px 0 9px; }
 .award-mark { flex: 0 0 24px; padding-top: 3px; color: var(--luka-accent); font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; font-weight: 700; }
