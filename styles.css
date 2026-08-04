@@ -119,8 +119,12 @@ a:hover { filter: brightness(1.12); }
 
 .compact-timeline .timeline-item { padding-bottom: 18px; }
 #service .item-content h3,
-#service .period { color: var(--luka-accent); }
+#service .period,
+#service .detail,
+#service .detail a { color: var(--luka-text); }
 #service .detail { color: var(--luka-secondary); }
+#service .detail a { text-decoration: underline; text-decoration-color: var(--luka-secondary); text-underline-offset: 3px; }
+#service .detail a:hover { color: var(--luka-text); filter: none; }
 .awards { max-width: 680px; }
 .award-item { display: flex; align-items: flex-start; gap: 13px; padding: 5px 0 9px; }
 .award-mark { flex: 0 0 24px; padding-top: 3px; color: var(--luka-accent); font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; font-weight: 700; }
