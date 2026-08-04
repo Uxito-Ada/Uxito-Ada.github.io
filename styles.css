@@ -122,7 +122,6 @@ a:hover { filter: brightness(1.12); }
 #service .period,
 #service .detail,
 #service .detail a { color: var(--luka-text); }
-#service .detail { color: var(--luka-secondary); }
 #service .detail a { text-decoration: underline; text-decoration-color: var(--luka-secondary); text-underline-offset: 3px; }
 #service .detail a:hover { color: var(--luka-text); filter: none; }
 .awards { max-width: 680px; }
