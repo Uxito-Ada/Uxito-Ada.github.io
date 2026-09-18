@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+  <title id="title">VaBUS edge-cloud video analytics</title>
+  <desc id="desc">A camera and edge model filter regions of interest before sending compact updates to the cloud.</desc>
+  <rect width="520" height="360" rx="18" fill="#f7eee9"/>
+  <path d="M38 278h444" stroke="#d6a28d" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="35" y="120" width="112" height="92" rx="12" fill="#fff" stroke="#ba6b4d" stroke-width="3"/>
+    <path d="M57 148h48l22 18-22 18H57l-18-18z" fill="#f3d6c9" stroke="#ba6b4d" stroke-width="3"/>
+    <circle cx="78" cy="166" r="10" fill="#ba6b4d"/>
+    <text x="91" y="236" font-size="16" fill="#403a33">camera</text>
+    <rect x="204" y="87" width="122" height="160" rx="14" fill="#fff" stroke="#ba6b4d" stroke-width="3"/>
+    <text x="265" y="123" font-size="16" fill="#403a33">edge</text>
+    <rect x="229" y="143" width="72" height="22" rx="5" fill="#f3d6c9"/>
+    <rect x="229" y="176" width="72" height="22" rx="5" fill="#e8b69f"/>
+    <text x="265" y="159" font-size="11" fill="#403a33">background</text>
+    <text x="265" y="192" font-size="11" fill="#403a33">ROI only</text>
+    <rect x="383" y="120" width="102" height="92" rx="12" fill="#fff" stroke="#ba6b4d" stroke-width="3"/>
+    <path d="M405 145h58v42h-58z" fill="#f3d6c9"/>
+    <path d="M413 176l13-15 12 10 9-8 10 13" fill="none" stroke="#ba6b4d" stroke-width="4"/>
+    <text x="434" y="236" font-size="16" fill="#403a33">cloud</text>
+  </g>
+  <g stroke="#ba6b4d" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M148 166h44"/><path d="m181 155 12 11-12 11"/>
+    <path d="M328 166h43"/><path d="m360 155 12 11-12 11"/>
+  </g>
+  <text x="260" y="318" font-family="Arial, sans-serif" text-anchor="middle" font-size="15" fill="#857c72">background subtraction · edge-cloud analytics</text>
+</svg>

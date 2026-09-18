@@ -97,7 +97,12 @@ a:hover { filter: brightness(1.12); }
 
 .publication-intro { max-width: 690px; margin-bottom: 16px !important; color: var(--luka-secondary); }
 .publication-list { display: grid; gap: 16px; }
-.publication-card { padding: 18px 20px 19px; border: 1px solid var(--luka-border); border-left: 3px solid var(--luka-accent); background: rgba(255, 255, 255, 0.32); }
+.publication-card { display: grid; grid-template-columns: 185px minmax(0, 1fr); gap: 20px; padding: 15px 18px 16px; border: 1px solid var(--luka-border); border-left: 3px solid var(--luka-accent); background: rgba(255, 255, 255, 0.32); }
+.publication-visual { align-self: start; aspect-ratio: 4 / 3; overflow: hidden; border: 1px solid var(--luka-border); border-radius: 3px; background: #fff; }
+.publication-visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.publication-body { min-width: 0; }
+.qspa-visuals { display: grid; grid-template-rows: 1fr 1fr; gap: 6px; aspect-ratio: auto; border: 0; background: transparent; }
+.qspa-visuals img { height: auto; min-height: 0; border: 1px solid var(--luka-border); object-fit: cover; }
 .publication-card h3 { margin: 0 0 5px; color: var(--luka-text); font-family: Georgia, "Times New Roman", serif; font-size: 19px; font-weight: 600; line-height: 1.33; }
 .publication-kind { margin: 0 0 5px !important; color: var(--luka-accent); font-size: 12px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; }
 .authors { margin: 0 0 5px !important; color: var(--luka-secondary); font-size: 13px; line-height: 1.55; }
@@ -121,12 +126,6 @@ a:hover { filter: brightness(1.12); }
   letter-spacing: 0;
 }
 .publication-links a:hover { border-color: var(--luka-accent); background: rgba(186, 107, 77, 0.06); filter: none; }
-.speed-comparison { display: grid; gap: 8px; margin-top: 14px; padding: 11px 12px; background: rgba(186, 107, 77, 0.06); }
-.speed-comparison > div { display: grid; grid-template-columns: 92px 1fr; align-items: center; gap: 10px; color: var(--luka-secondary); font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; }
-.speed-bar { display: flex; align-items: center; min-height: 22px; padding-left: 8px; color: #fff; background: var(--luka-accent); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 12px; }
-.bar-large { width: 100%; }
-.bar-small { width: 58%; background: #9d7b6c; }
-
 .compact-timeline .timeline-item { padding-bottom: 18px; }
 #service .item-content h3,
 #service .period,
@@ -166,6 +165,9 @@ a:hover { filter: brightness(1.12); }
   .sidebar { padding-top: 72px; }
   .section { margin-bottom: 33px; }
   .section h2 { font-size: 18px; }
+  .publication-card { grid-template-columns: 1fr; gap: 13px; }
+  .publication-visual { width: min(100%, 280px); }
+  .qspa-visuals { width: min(100%, 340px); }
   .item-content h3, .publications li a { font-size: 14px; }
   .detail, .project-list, .award-item p { font-size: 13px; }
   .publications li::before { display: none; }
