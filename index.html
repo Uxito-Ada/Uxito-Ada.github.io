@@ -13,9 +13,8 @@
         <a class="nav-name" href="#top">Heyang Sun</a>
         <div class="nav-links">
           <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
           <a href="#publications">Publications</a>
-          <a href="assets/heyang-sun-cv.pdf" target="_blank" rel="noreferrer">CV</a>
+          <a href="#experience">Experience</a>
         </div>
       </div>
     </nav>
@@ -29,7 +28,6 @@
           <a class="email" href="mailto:hsunbi@connect.ust.hk">hsunbi@connect.ust.hk</a>
           <div class="profile-links">
             <a href="mailto:hsunbi@connect.ust.hk">Email</a>
-            <a href="assets/heyang-sun-cv.pdf" target="_blank" rel="noreferrer">CV</a>
           </div>
         </div>
       </aside>
@@ -63,74 +61,56 @@
           </div>
         </section>
 
-        <section class="section" id="experience">
-          <h2>Experience</h2>
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="item-content">
-                <h3>Intel</h3>
-                <p class="detail">AI Frameworks Engineer (Full-time Employee, 3 Years)</p>
-                <ul class="project-list">
-                  <li><a href="https://github.com/intel/ipex-llm/tree/main" target="_blank" rel="noreferrer">IPEX-LLM</a>: Intel's LLM acceleration library on SGLang, Deepspeed and quantization with 8.9k stars on github.</li>
-                  <li><a href="https://github.com/intel/BigDL" target="_blank" rel="noreferrer">BigDL</a>: Distributed, Fast and Efficient AI, DL, ML and Big Data with 2.7k stars on github.</li>
-                  <li><a href="https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2022-10/intel-sgx-alibaba-cloud-end-to-end-ppml-solution.pdf" target="_blank" rel="noreferrer">BigDL PPML</a>: Privacy-preserving machine learning powered by Intel SGX and TDX on Kubernetes, with customers e.g. Azure, Ant, Bytedance, Tencent, Ali Cloud, JD and Meituan in their real-world business.</li>
-                </ul>
-                <p class="period">Aug 2022 - Jul 2025 &middot; Shanghai, China</p>
-              </div>
+        <section class="section publications" id="publications">
+          <h2>Publications</h2>
+          <p class="publication-intro">Selected research on real-time video intelligence, streaming multimodal systems, and efficient generative models.</p>
+          <div class="publication-list">
+            <article class="publication-card">
+              <p class="publication-kind">Journal article &middot; 2023</p>
+              <h3>VaBUS: Edge-Cloud Real-Time Video Analytics via Background Understanding and Subtraction</h3>
+              <p class="authors">Hanling Wang, Qing Li, <strong>Heyang Sun</strong>, Zuozhou Chen, Yingqian Hao, Junkun Peng, Zhenhui Yuan, Junsheng Fu, Yong Jiang</p>
+              <p class="venue">IEEE Journal on Selected Areas in Communications, 41(1), 90-106. Second student author.</p>
+              <p class="publication-summary">VaBUS uses background understanding to keep contextual video information on the edge and transmit only high-confidence regions of interest to the cloud. It reduces bandwidth consumption by 25.0%&ndash;76.9% while maintaining 90.7% accuracy on object detection and human keypoint detection.</p>
+              <div class="publication-links"><a href="https://ieeexplore.ieee.org/document/9953098" target="_blank" rel="noreferrer">Paper</a></div>
             </article>
-            <article class="timeline-item">
-              <div class="item-content">
-                <h3>Huawei HK Research Center</h3>
-                <p class="affiliation">Celia AI Lab</p>
-                <p class="detail">Research Intern</p>
-                <ul class="project-list">
-                  <li><a href="https://github.com/boogu-project/Boogu-Image" target="_blank" rel="noreferrer">BOOGU-Image</a>: Built large-scale evaluation service for DiT training with vLLM, diffusers and fastAPI, and accelerations to speed up inference with cache DiT, torch compile and FP8.</li>
-                  <li><a href="https://aurateam2026.github.io/" target="_blank" rel="noreferrer">AURA</a>: Built a real-time streaming video understanding framework, managing KV-cache over unbounded video with context compression, sliding window, optimized prefix caching and request scheduling.</li>
-                </ul>
-                <p class="period">Oct 2025 - Jun 2026 &middot; Hong Kong</p>
-              </div>
+            <article class="publication-card">
+              <p class="publication-kind">CoRR / arXiv &middot; 2026</p>
+              <h3>AURA: Always-On Understanding and Real-Time Assistance via Video Streams</h3>
+              <p class="authors">Xudong Lu, Yang Bo, Jinpeng Chen, Shuhan Li, Xintong Guo, Huankang Guan, Fang Liu, Dunyuan Xu, Peiwen Sun, <strong>Heyang Sun</strong>, Rui Liu, Hongsheng Li</p>
+              <p class="venue">arXiv:2604.04184. Coauthor.</p>
+              <p class="publication-summary">AURA is an end-to-end streaming visual-interaction framework for continuous VideoLLM processing, real-time question answering, and proactive responses. It combines context management, data construction, training objectives, and deployment optimization for stable long-horizon streaming interaction.</p>
+              <div class="publication-links"><a href="https://arxiv.org/abs/2604.04184" target="_blank" rel="noreferrer">Paper</a><a href="https://aurateam2026.github.io/" target="_blank" rel="noreferrer">Project</a></div>
             </article>
-            <article class="timeline-item">
-              <div class="item-content">
-                <h3>Alibaba Group</h3>
-                <p class="affiliation">Foundation Platform</p>
-                <p class="detail">Research Intern</p>
-                <ul class="project-list">
-                  <li>Built a hybrid attention collaborating AMX and GPU to overlap KV-cache transfer for long-context LLM serving.</li>
-                  <li>Consultant on LLM accelerations, Trusted Execution Environment and other Intel and deep learning ecosystems.</li>
-                </ul>
-                <p class="period">Sep 2025 - Present &middot; Remote</p>
-              </div>
+            <article class="publication-card">
+              <p class="publication-kind">CoRR / arXiv &middot; 2026</p>
+              <h3>Boogu-Image-0.1: Boosting Open Agentic Multimodal Generation via Understanding under a Minimal Budget</h3>
+              <p class="authors">Guoxuan Chen, Chufeng Xiao, Haoran Yang, Siyue Xie, Binxiao Huang, Ming Zhang, Cheuk Him Chau, Xinyu Fu, Yingzhao Lian, Tom S.Y. Li, Jintao Lin, Bowen Dong, Zian Qian, Yuhao Liu, Yuxuan Hu, Weikang Shi, Bin Zou, Bowen Zheng, Haoxuan Che, Chang Chen, Yuyang He, <strong>Heyang Sun</strong>, Tianyu Huang, Chong Hou Choi, Cheng Gong, Han Shi, Haoli Bai, Xihui Liu, Hongsheng Li, Qifeng Chen, Chao Huang, Rui Liu, Chenyang Lei</p>
+              <p class="venue">arXiv:2607.13125. Coauthor.</p>
+              <p class="publication-summary">An open unified multimodal model family for text-to-image generation, fast inference, instruction-based editing, and bilingual rendering. The work shows how stronger understanding, agentic prompt rewriting, and inference-time scaling can improve generation under a constrained compute budget.</p>
+              <div class="publication-links"><a href="https://arxiv.org/abs/2607.13125" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/boogu-project/Boogu-Image" target="_blank" rel="noreferrer">GitHub</a></div>
             </article>
-            <article class="timeline-item">
-              <div class="item-content">
-                <h3>Intel</h3>
-                <p class="detail">Deep Learning Engineer Intern</p>
-                <p class="period">Sep 2021 - Jul 2022 &middot; Shanghai, China</p>
+            <article class="publication-card project-card">
+              <p class="publication-kind">Selected public project &middot; 2026</p>
+              <h3>Q-SPA: Efficient Video Generation Inference</h3>
+              <p class="authors"><strong>Heyang Sun</strong></p>
+              <p class="publication-summary">Q-SPA accelerates MiniMax-H3 video generation, delivering 2.64&times; and 1.52&times; faster inference than LightX2V and SGLang, respectively.</p>
+              <div class="speed-comparison" aria-label="Q-SPA performance comparison">
+                <div><span>vs. LightX2V</span><span class="speed-bar bar-large"><b>2.64&times;</b></span></div>
+                <div><span>vs. SGLang</span><span class="speed-bar bar-small"><b>1.52&times;</b></span></div>
               </div>
+              <div class="publication-links"><a href="https://uxito-ada.github.io/telefuser-efficient-inference/site/index.html" target="_blank" rel="noreferrer">Project</a></div>
             </article>
           </div>
         </section>
 
-        <section class="section publications" id="publications">
-          <h2>Publications</h2>
-          <ol>
-            <li>
-              <a href="https://ieeexplore.ieee.org/document/9953098" target="_blank" rel="noreferrer">VABUS: Edge-Cloud Real-time Video Analytics via Background Understanding and Subtraction</a>
-              <span class="publication-note">Second student author, 2022.</span>
-              <span class="publication-links"><a href="https://ieeexplore.ieee.org/document/9953098" target="_blank" rel="noreferrer">Paper</a></span>
-            </li>
-            <li>
-              <a href="https://aurateam2026.github.io/" target="_blank" rel="noreferrer">AURA: Always-On Understanding and Real-Time Assistance via Video Streams</a>
-              <span class="publication-note">Coauthor, 2026.</span>
-              <span class="publication-links"><a href="https://arxiv.org/abs/2604.04184" target="_blank" rel="noreferrer">Paper</a><a href="https://aurateam2026.github.io/" target="_blank" rel="noreferrer">Project</a></span>
-            </li>
-            <li>
-              <a href="https://github.com/boogu-project/Boogu-Image" target="_blank" rel="noreferrer">Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation</a>
-              <span class="publication-note">Coauthor, 2026.</span>
-              <span class="publication-links"><a href="https://arxiv.org/abs/2607.13125" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/boogu-project/Boogu-Image" target="_blank" rel="noreferrer">GitHub</a></span>
-            </li>
-          </ol>
+        <section class="section" id="experience">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <article class="timeline-item"><div class="item-content"><h3>Intel</h3><p class="detail">AI Frameworks Engineer (Full-time Employee, 3 Years)</p><ul class="project-list"><li><a href="https://github.com/intel/ipex-llm/tree/main" target="_blank" rel="noreferrer">IPEX-LLM</a>: Intel's LLM acceleration library on SGLang, Deepspeed and quantization with 8.9k stars on github.</li><li><a href="https://github.com/intel/BigDL" target="_blank" rel="noreferrer">BigDL</a>: Distributed, Fast and Efficient AI, DL, ML and Big Data with 2.7k stars on github.</li><li><a href="https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2022-10/intel-sgx-alibaba-cloud-end-to-end-ppml-solution.pdf" target="_blank" rel="noreferrer">BigDL PPML</a>: Privacy-preserving machine learning powered by Intel SGX and TDX on Kubernetes, with customers e.g. Azure, Ant, Bytedance, Tencent, Ali Cloud, JD and Meituan in their real-world business.</li></ul><p class="period">Aug 2022 - Jul 2025 &middot; Shanghai, China</p></div></article>
+            <article class="timeline-item"><div class="item-content"><h3>Huawei HK Research Center</h3><p class="affiliation">Celia AI Lab</p><p class="detail">Research Intern</p><ul class="project-list"><li><a href="https://github.com/boogu-project/Boogu-Image" target="_blank" rel="noreferrer">BOOGU-Image</a>: Built large-scale evaluation service for DiT training with vLLM, diffusers and fastAPI, and accelerations to speed up inference with cache DiT, torch compile and FP8.</li><li><a href="https://aurateam2026.github.io/" target="_blank" rel="noreferrer">AURA</a>: Built a real-time streaming video understanding framework towards auto-regressive MLLM, managing KV-cache over unbounded video with sparsity, sliding window, optimized prefix caching and request scheduling.</li></ul><p class="period">Oct 2025 - Jun 2026 &middot; Hong Kong</p></div></article>
+            <article class="timeline-item"><div class="item-content"><h3>Alibaba Group</h3><p class="affiliation">Foundation Platform</p><p class="detail">Research Intern</p><ul class="project-list"><li>Built a hybrid attention collaborating AMX and GPU to overlap KV-cache transfer for long-context LLM serving.</li><li>Consultant on LLM accelerations, Trusted Execution Environment and other Intel and deep learning ecosystems.</li></ul><p class="period">Sep 2025 - Present &middot; Remote</p></div></article>
+            <article class="timeline-item"><div class="item-content"><h3>Intel</h3><p class="detail">Deep Learning Engineer Intern</p><p class="period">Sep 2021 - Jul 2022 &middot; Shanghai, China</p></div></article>
+          </div>
         </section>
 
         <section class="section" id="service">

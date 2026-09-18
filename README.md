@@ -1,6 +1,6 @@
 # Heyang Sun Homepage
 
-This is a dependency-free static site for GitHub Pages. All content is in `index.html`, styling is in `styles.css`, and `assets/heyang-sun-cv.pdf` is the downloadable CV.
+This is a dependency-free static site for GitHub Pages. All content is in `index.html` and styling is in `styles.css`.
 
 ## Public URL
 
