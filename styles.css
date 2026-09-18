@@ -82,6 +82,10 @@ a:hover { filter: brightness(1.12); }
 .affiliation { margin: 0 0 2px !important; color: var(--luka-accent); font-size: 13px; font-weight: 600; }
 .detail { margin: 0 0 3px !important; color: var(--luka-secondary); font-size: 14px; }
 .role { color: var(--luka-text); font-weight: 700; }
+.degree { margin: 0 0 3px !important; color: var(--luka-accent); font-size: 14px; font-weight: 700; }
+.education-metrics { margin: 0 0 3px !important; color: var(--luka-text); font-size: 14px; }
+#education .affiliation,
+#education .period { color: var(--luka-secondary); }
 .period { margin: 5px 0 0 !important; color: var(--luka-accent); font-size: 13px; font-weight: 500; }
 .project-list { margin: 8px 0 5px; padding-left: 18px; color: var(--luka-secondary); font-size: 14px; }
 .project-list li + li { margin-top: 4px; }
