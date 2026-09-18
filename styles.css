@@ -81,6 +81,7 @@ a:hover { filter: brightness(1.12); }
 .item-content h3 { margin: 0 0 2px; color: var(--luka-text); font-size: 15px; font-weight: 700; line-height: 1.45; }
 .affiliation { margin: 0 0 2px !important; color: var(--luka-accent); font-size: 13px; font-weight: 600; }
 .detail { margin: 0 0 3px !important; color: var(--luka-secondary); font-size: 14px; }
+.role { color: var(--luka-text); font-weight: 700; }
 .period { margin: 5px 0 0 !important; color: var(--luka-accent); font-size: 13px; font-weight: 500; }
 .project-list { margin: 8px 0 5px; padding-left: 18px; color: var(--luka-secondary); font-size: 14px; }
 .project-list li + li { margin-top: 4px; }
@@ -101,8 +102,8 @@ a:hover { filter: brightness(1.12); }
 .publication-visual { align-self: start; aspect-ratio: 4 / 3; overflow: hidden; border: 1px solid var(--luka-border); border-radius: 3px; background: #fff; }
 .publication-visual img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .publication-body { min-width: 0; }
-.qspa-visuals { display: grid; grid-template-rows: 1fr 0.8fr; gap: 6px; aspect-ratio: auto; border: 0; background: transparent; }
-.qspa-visuals img { height: auto; min-height: 0; border: 1px solid var(--luka-border); object-fit: contain; }
+.qspa-visuals { display: grid; grid-template-rows: minmax(0, 1fr) minmax(0, 0.8fr); gap: 6px; min-height: 240px; aspect-ratio: 16 / 11; border: 0; background: transparent; }
+.qspa-visuals img { width: 100%; height: 100%; min-height: 0; border: 1px solid var(--luka-border); object-fit: contain; }
 .publication-card h3 { margin: 0 0 5px; color: var(--luka-text); font-family: Georgia, "Times New Roman", serif; font-size: 19px; font-weight: 600; line-height: 1.33; }
 .publication-kind { margin: 0 0 5px !important; color: var(--luka-accent); font-size: 12px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; }
 .authors { margin: 0 0 5px !important; color: var(--luka-secondary); font-size: 13px; line-height: 1.55; }
